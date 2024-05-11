@@ -1,0 +1,16 @@
+.main {
+    height: 100vh; /* Adjusted to use viewport height */
+    width: 100vw; /* Adjusted to use viewport width */
+  }
+  
+  .cursor {
+    height: 20px;
+    width: 20px;
+    background-color: #06d688;
+    box-shadow: 0 0px 8px 5px #06d688;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none; /* Ensures the cursor does not interfere with other elements */
+    z-index: 9999999; /* Ensures the cursor stays on top of other elements */
+  }
+  

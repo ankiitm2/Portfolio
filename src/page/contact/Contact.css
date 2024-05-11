@@ -1,0 +1,54 @@
+.contact .titleBox h1:before {
+  content: "CONTACT";
+  font-size: 7rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.135);
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  max-width: max-content;
+}
+
+.contact .titleBox span.line {
+  content: "";
+  width: 8%;
+  height: 3px;
+  background-color: #06d688;
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
+.contact .icons span:hover {
+  color: #06d688;
+  transition: ease-in .2s;
+}
+
+.contact {
+  padding-left: 6rem !important;
+  padding-right: 6rem !important;
+}
+
+.contact input{
+  background: #111113;
+  padding: 0.81rem 0.96rem;
+  width: 100%;
+}
+
+.contact textarea{
+  background: #111113;
+  padding: 0.81rem 0.96rem;
+  min-height: 8rem;
+}
+
+.contact input:focus,
+.contact textarea:focus{
+  border: solid 1px #06d688 !important;
+  box-shadow: 0 0 5px #06d68ac1;
+}
+
+.contact button{
+  display: block;
+  margin: auto;
+}

@@ -1,0 +1,15 @@
+.layout .rightContainer {
+  height: 100vh;
+  overflow: scroll;
+  width: calc(100% - 230px);
+  margin-left: auto;
+  overflow-y: auto;
+  /* hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* hide scrollbar for chrome, safari and opera */
+.layout .rightContainer::-webkit-scrollbar {
+  display: none;
+}

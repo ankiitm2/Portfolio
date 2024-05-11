@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /Portfolio/
+
+# Rewrite all requests to the index.html file
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /Portfolio/index.html [L]

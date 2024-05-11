@@ -1,0 +1,56 @@
+.sideBar {
+  position: fixed;
+  z-index: 100;
+  height: 100vh;
+  background: black;
+  color: var(--text-color);
+  width: 230px;
+}
+
+.css-18unl23,
+.css-dip3t8 {
+  background-color: black !important;
+}
+
+.css-1t8x7v1 > .ps-menu-button:hover {
+  background-color: unset !important;
+}
+
+.nav-links ul li:hover {
+  background-color: black !important;
+  color: #06d688;
+}
+
+.logo {
+  padding-top: 5rem;
+}
+
+.logo .logoPart {
+  color: #06d688;
+}
+
+.css-1wvake5 {
+  min-width: unset !important;
+  width: unset !important;
+}
+
+.ps-collapsed {
+  width: 92px;
+}
+
+.ps-sidebar-container {
+  width: 100%;
+}
+
+.nav-links {
+  margin: auto 0;
+  display: block;
+  margin-top: 50%;
+}
+
+@media screen and (max-width: 640px) {
+  .toggleClass {
+    position: fixed;
+    z-index: 1000;
+  }
+}
