@@ -12,6 +12,7 @@ function Sidebars() {
     const element = document.getElementById(elementId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+      setSidebarVisible(false);
     }
   };
   const [isSidebarVisible, setSidebarVisible] = React.useState(false); // Start hidden on small devices

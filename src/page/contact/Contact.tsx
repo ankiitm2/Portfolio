@@ -62,25 +62,25 @@ const Contact = () => {
           </Link>
           <h2 className="my-4 text-2xl uppercase">Follow me</h2>
           <div className="icons flex gap-6">
-            <Link to={""}>
+            <Link to={"https://www.linkedin.com/in/ankit-mishra-3aab7b236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"} target="_blank">
               <span className=" text-2xl">
                 {" "}
                 <IoLogoLinkedin />
               </span>
             </Link>
-            <Link to={"https://github.com/ankiitm2"}>
+            <Link to={"https://github.com/ankiitm2"} target="_blank">
               <span className=" text-2xl">
                 {" "}
                 <IoLogoGithub />
               </span>
             </Link>
-            <Link to={""}>
+            <Link to={"https://www.instagram.com/ankittm2?utm_source=qr&igsh=MXRteG9uMm9lOTF1OA=="} target="_blank">
               <span className=" text-2xl">
                 {" "}
                 <IoLogoInstagram />
               </span>
             </Link>
-            <Link to={""}>
+            <Link to={"https://x.com/ankittm2?t=3_sthYtShNnCFa8qdKwhnw&s=35"} target="_blank">
               <span className=" text-2xl">
                 {" "}
                 <BsTwitterX />
