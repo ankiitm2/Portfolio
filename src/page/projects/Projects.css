@@ -45,6 +45,10 @@ span.line {
   background-image: url(../../assets/speechtotext.webp);
 }
 
+.card3{
+  background-image: url(../../assets/Ecommerce.webp);
+}
+
 .card button{
   display: block;
   margin: auto;

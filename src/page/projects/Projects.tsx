@@ -18,7 +18,7 @@ const Projects = () => {
         <span className="line"></span>
       </div>
       <div className="cards flex flex-wrap gap-10 justify-center items-center lg:flex-row">
-        <div className="card max-w-80">
+        <div className="card max-w-md">
           <div className="card__content">
             <p className="card__title">Drama: movies database application</p>
             <p className="card__description mb-4">
@@ -27,7 +27,7 @@ const Projects = () => {
             <ButtonComp text={"Open"} onClick={openProject}/>
           </div>
         </div>
-        <div className="card max-w-80 card2">
+        <div className="card max-w-md card2">
           <div className="card__content">
             <p className="card__title">Speech Recognition Website</p>
             <p className="card__description mb-4">
@@ -36,7 +36,7 @@ const Projects = () => {
             <ButtonComp text={"Open"} onClick={openProject2}/>
           </div>
         </div>
-        <div className="card max-w-80">
+        <div className="card max-w-md card3">
           <div className="card__content">
             <p className="card__title">Card Title</p>
             <p className="card__description mb-4">
