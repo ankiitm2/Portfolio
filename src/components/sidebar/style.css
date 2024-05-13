@@ -68,8 +68,10 @@
   left: 10px; /* Adjust as necessary */
   z-index: 1001; /* Higher than the sidebar */
   cursor: pointer;
-  border: none;
   padding: 10px;
+  font-size: 1.5rem;
+  width: fit-content !important;
+  height: fit-content !important;
   border-radius: 5px;
 }
 
