@@ -5,8 +5,11 @@ import Projects from "../projects/Projects";
 import Contact from "../contact/Contact";
 import { Element } from "react-scroll"; // Import from react-scroll
 import About from "../about/About";
+import Transition from "../../components/transition/Transition";
+
 
 const HomeWithAbout = () => (
+  <Transition>
   <div className="flex layout">
     <Sidebars />
     <div className="rightContainer">
@@ -24,6 +27,7 @@ const HomeWithAbout = () => (
       </Element>
     </div>
   </div>
+  </Transition>
 );
 
 export default HomeWithAbout;

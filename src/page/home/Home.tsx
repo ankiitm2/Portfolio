@@ -3,6 +3,9 @@ import "./Home.css"
 import Typed from "typed.js";
 import Avatar from "../../assets/Avatar.svg";
 import ButtonComp from "../../components/button/Button";
+import Transition from "../../components/transition/Transition";
+
+
 declare global {
   interface Window {
     VANTA: any;
@@ -78,6 +81,7 @@ const Home = () => {
 
 
   return (
+    <Transition>
     <div
       id="your-element-selector"
       className="Home min-h-screen flex justify-center items-center text-center"
@@ -97,6 +101,7 @@ const Home = () => {
         />
       </div>
     </div>
+    </Transition>
   );
 };
 
