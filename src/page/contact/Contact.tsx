@@ -35,7 +35,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact min-h-screen gap-28 p-14 flex flex-col justify-around relative">
+    <div className="contact min-h-screen gap-8 lg:gap-28 md:gap-28 p-14 flex flex-col justify-around relative">
       <div className="titleBox text-center mt-3">
         <h1 className="text-4xl font-bold position-relative">Get in Touch</h1>
         <span className="line"></span>
@@ -90,7 +90,7 @@ const Contact = () => {
         </div>
         <form ref={form} className="inputBox w-full" onSubmit={sendEmail}>
           <h2 className="mb-4 text-2xl uppercase">Send us a note</h2>
-          <div className="inputFields flex gap-4">
+          <div className="inputFields flex flex-col lg:flex-row md:flex-row gap-4">
             <input
               type="text"
               name="user_name" // Ensure this matches your EmailJS template variable

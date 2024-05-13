@@ -44,11 +44,20 @@ button {
   height: 3.5em !important;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
   .about {
     padding-top: 2rem !important;
     padding-left: 2rem !important;
     padding-right: 2rem !important;
     gap: 3rem;
+    overflow-wrap: break-word;
   }
+
+  .about .titleBox h1:before {
+    font-size: 5rem;
+  }
+
+  /* .w-1\/2 {
+    width: 100%;
+  } */
 }

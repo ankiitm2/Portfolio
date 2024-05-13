@@ -386,11 +386,14 @@ span.line {
   content: unset;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
   .Projects {
     padding-top: 2rem !important;
     padding-left: 2rem !important;
     padding-right: 2rem !important;
     gap: 3rem;
   }
+
+  .Projects h1:before {
+    font-size: 3.2rem;}
 }

@@ -7,7 +7,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="Projects min-h-screen gap-28 p-14 flex flex-col justify-around relative">
+    <div className="Projects min-h-screen gap-8 lg:gap-28 md:gap-28 p-14 flex flex-col justify-around relative">
       <div className="titleBox text-center mb-7">
         <h1 className="text-4xl font-bold position-relative">My Work</h1>
         <span className="line"></span>

@@ -24,7 +24,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="about min-h-screen gap-28 p-14 flex flex-col justify-around relative">
+    <div className="about min-h-screen gap-8 lg:gap-28 md:gap-28 p-14 flex flex-col justify-around relative">
       <div className="titleBox text-center mt-3 mb-7">
         <h1 className="text-4xl font-bold position-relative">Know Me More</h1>
         <span className="line"></span>
@@ -44,7 +44,7 @@ const About = () => {
             customization
           </p>
         </div>
-        <div className="subInfo w-1/2">
+        <div className="subInfo md:w-1/2 lg:w-1/2">
           <ul className="mb-2 text-xl">
             <li>
               <span className="font-semibold me-2">Name:</span>Ankit Mishra

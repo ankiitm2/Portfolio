@@ -22,7 +22,7 @@
 
 .contact .icons span:hover {
   color: #06d688;
-  transition: ease-in .2s;
+  transition: ease-in 0.2s;
 }
 
 .contact {
@@ -30,25 +30,36 @@
   padding-right: 6rem !important;
 }
 
-.contact input{
+.contact input {
   background: #111113;
   padding: 0.81rem 0.96rem;
   width: 100%;
 }
 
-.contact textarea{
+.contact textarea {
   background: #111113;
   padding: 0.81rem 0.96rem;
   min-height: 8rem;
 }
 
 .contact input:focus,
-.contact textarea:focus{
+.contact textarea:focus {
   border: solid 1px #06d688 !important;
   box-shadow: 0 0 5px #06d68ac1;
 }
 
-.contact button{
+.contact button {
   display: block;
   margin: auto;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding-top: 2rem !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  .contact .titleBox h1:before {
+    font-size: 3.8rem;}
 }

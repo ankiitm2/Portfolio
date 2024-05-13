@@ -73,6 +73,7 @@
   width: fit-content !important;
   height: fit-content !important;
   border-radius: 5px;
+  background-color: var(--bg-color);
 }
 
 @media (max-width: 768px) {
