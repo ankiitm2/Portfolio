@@ -6,7 +6,7 @@ const Transition = ({ children }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     triggerOnce: true, // Trigger animation once
-    threshold: 0.5, // Trigger animation when 20% of the element is visible
+    threshold: 0.2, // Trigger animation when 20% of the element is visible
   });
 
   React.useEffect(() => {
