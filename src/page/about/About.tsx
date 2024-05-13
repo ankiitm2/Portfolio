@@ -2,6 +2,7 @@ import "./About.css";
 import ButtonComp from "../../components/button/Button";
 import { useEffect, useState } from "react";
 import ResumePDF from "../../assets/AnkitCV.pdf";
+import WindmillAnimation from "../../components/windmillAnimation/WindmillAnimation";
 
 // interface AboutProps {
 //   name: string;
@@ -70,6 +71,7 @@ const About = () => {
           <ButtonComp text={"Resume"} onClick={openResume} />
         </div>
       </div>
+        <WindmillAnimation/>
     </div>
   );
 };
