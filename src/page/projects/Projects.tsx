@@ -23,7 +23,7 @@ const Projects = () => {
             <ButtonComp text={"Open"} onClick={openProject}/>
           </div>
         </div>
-        <div className="card max-w-80">
+        <div className="card max-w-80 card2">
           <div className="card__content">
             <p className="card__title">Card Title</p>
             <p className="card__description">
