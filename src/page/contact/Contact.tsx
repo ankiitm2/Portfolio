@@ -9,32 +9,10 @@ import {
 } from "react-icons/io5";
 import { BsTwitterX } from "react-icons/bs";
 import ButtonComp from "../../components/button/Button";
-import emailjs from "@emailjs/browser";
-import { useRef } from "react";
 import Transition from "../../components/transition/Transition";
 import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefaul();
-    emailjs
-      .sendForm(
-        "service_l3bxf7s",
-        "template_yxk7rui",
-        form.current,
-        "IjZsUMbsyDPHMXJVL"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
 
   const [state, handleSubmit] = useForm("xeqydzqp");
   if (state.succeeded) {
@@ -109,7 +87,7 @@ const Contact = () => {
               </Link>
             </div>
           </div>
-          <form ref={form} className="inputBox w-full" onSubmit={handleSubmit}>
+          <form className="inputBox w-full" onSubmit={handleSubmit}>
             <h2 className="mb-4 text-2xl uppercase">Send us a note</h2>
             <div className="inputFields flex flex-col lg:flex-row md:flex-row gap-4">
               <input
