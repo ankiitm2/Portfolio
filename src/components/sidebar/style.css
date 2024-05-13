@@ -80,6 +80,7 @@
 
   .sideBar {
     transform: translateX(0); /* Sidebar visible by default */
+    z-index: 1000;
   }
 }
 
