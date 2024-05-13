@@ -5,6 +5,12 @@
   background: black;
   color: var(--text-color);
   width: 230px;
+  transition: transform 0.3s ease;
+  /* transform: translateX(-100%); */
+}
+
+.sideBar.hidden {
+  transform: translateX(-100%);
 }
 
 .css-18unl23,
@@ -52,5 +58,34 @@
   .toggleClass {
     position: fixed;
     z-index: 1000;
+  }
+}
+
+.toggle-button {
+  display: none; /* Initially hidden on larger screens */
+  position: fixed;
+  top: 10px; /* Adjust as necessary */
+  left: 10px; /* Adjust as necessary */
+  z-index: 1001; /* Higher than the sidebar */
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .toggle-button {
+    display: block; /* Show only on small devices */
+  }
+
+  .sideBar {
+    transform: translateX(0); /* Sidebar visible by default */
+  }
+}
+
+@media (min-width: 769px) {
+  .sideBar.hidden {
+    display: unset;
+    transform: unset;
   }
 }

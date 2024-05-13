@@ -13,3 +13,9 @@
 .layout .rightContainer::-webkit-scrollbar {
   display: none;
 }
+
+.layout .rightContainer.full-width {
+  max-width: -webkit-fill-available;
+  width: 100vw;
+  margin-left: unset;
+}

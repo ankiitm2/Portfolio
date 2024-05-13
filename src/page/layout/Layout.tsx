@@ -3,7 +3,7 @@ import Home from "../home/Home";
 import Sidebars from "../../components/sidebar/SideBar";
 import Projects from "../projects/Projects";
 import Contact from "../contact/Contact";
-import { Element } from 'react-scroll'; // Import from react-scroll
+import { Element } from "react-scroll"; // Import from react-scroll
 import About from "../about/About";
 
 const HomeWithAbout = () => (
