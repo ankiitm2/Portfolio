@@ -3,6 +3,7 @@ import Transition from "../../components/transition/Transition";
 import "./Projects.css";
 
 const Projects = () => {
+
   const openProject = () => {
     window.open("https://ankiitm2.github.io/Drama/");
   };

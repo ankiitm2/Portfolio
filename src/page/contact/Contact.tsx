@@ -12,6 +12,7 @@ import ButtonComp from "../../components/button/Button";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import Transition from "../../components/transition/Transition";
+import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
   const form = useRef();
@@ -34,6 +35,11 @@ const Contact = () => {
         }
       );
   };
+
+  const [state, handleSubmit] = useForm("xeqydzqp");
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
 
   return (
     <Transition>
@@ -103,7 +109,7 @@ const Contact = () => {
               </Link>
             </div>
           </div>
-          <form ref={form} className="inputBox w-full" onSubmit={sendEmail}>
+          <form ref={form} className="inputBox w-full" onSubmit={handleSubmit}>
             <h2 className="mb-4 text-2xl uppercase">Send us a note</h2>
             <div className="inputFields flex flex-col lg:flex-row md:flex-row gap-4">
               <input
@@ -113,20 +119,27 @@ const Contact = () => {
                 className="text-base outline-none rounded-md"
               />
               <input
+                id="email"
                 type="email"
-                name="user_email" // Ensure this matches your EmailJS template variable
+                name="email"
                 placeholder="Email"
                 className="text-base outline-none rounded-md"
               />
+              <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
             </div>
             <div className="text-area my-4">
               <textarea
-                name="message" // Ensure this matches your EmailJS template variable
+               id="message"
+               name="message"
                 className="w-full outline-none rounded-md"
                 placeholder="Tell us more about your needs........"
               ></textarea>
             </div>
-            <ButtonComp text="Send Message" onClick={() => {}} />
+            <ButtonComp type="submit" disabled={state.submitting} text="Send Message" onClick={() => {}} />
           </form>
         </div>
       </div>
