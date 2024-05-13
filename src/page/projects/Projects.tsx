@@ -7,6 +7,10 @@ const Projects = () => {
     window.open("https://ankiitm2.github.io/Drama/")
   }
 
+  const openProject2 = ()=>{
+    window.open("https://ankiitm2.github.io/SpeechToText/")
+  }
+
   return (
     <div className="Projects min-h-screen gap-8 lg:gap-28 md:gap-28 p-14 flex flex-col justify-around relative">
       <div className="titleBox text-center mb-7">
@@ -25,22 +29,20 @@ const Projects = () => {
         </div>
         <div className="card max-w-80 card2">
           <div className="card__content">
-            <p className="card__title">Card Title</p>
-            <p className="card__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco.
+            <p className="card__title">Speech Recognition Website</p>
+            <p className="card__description mb-4">
+            Speech recognition marvel translates spoken words into text
             </p>
+            <ButtonComp text={"Open"} onClick={openProject2}/>
           </div>
         </div>
         <div className="card max-w-80">
           <div className="card__content">
             <p className="card__title">Card Title</p>
-            <p className="card__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco.
+            <p className="card__description mb-4">
+            Speech recognition marvel translates spoken words into text
             </p>
+            <ButtonComp text={"Open"} onClick={openProject2}/>
           </div>
         </div>
       </div>

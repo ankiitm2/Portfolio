@@ -41,7 +41,14 @@ span.line {
   box-shadow: rgb(141 141 141 / 75%) 0px 2px 8px 0px;
 }
 
-.card2{}
+.card2{
+  background-image: url(../../assets/speechtotext.webp);
+}
+
+.card button{
+  display: block;
+  margin: auto;
+}
 
 .card:hover {
   transform: scale(1.05);
