@@ -16,11 +16,9 @@ const Projects = () => {
       <div className="cards flex flex-wrap gap-10 justify-center items-center lg:flex-row">
         <div className="card max-w-80">
           <div className="card__content">
-            <p className="card__title">Card Title</p>
-            <p className="card__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco.
+            <p className="card__title">Drama: movies database application</p>
+            <p className="card__description mb-4">
+            Orchestrated a React-driven movie database website
             </p>
             <ButtonComp text={"Open"} onClick={openProject}/>
           </div>
