@@ -20,7 +20,7 @@ const Projects = () => {
           <span className="line"></span>
         </div>
         <div className="cards flex flex-wrap gap-10 justify-center items-center lg:flex-row">
-          <div className="card max-w-md">
+          <div className="card max-w-md card1">
             <div className="card__content">
               <p className="card__title">Drama: movies database application</p>
               <p className="card__description mb-4">
