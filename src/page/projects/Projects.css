@@ -82,7 +82,7 @@ span.line {
 
 .card__title {
   margin: 0;
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 700;
 }
 
@@ -91,8 +91,8 @@ span.line {
 }
 
 .card__description {
-  margin: 10px 0 0;
-  font-size: 14px;
+  margin: 4px 0 0;
+  font-size: 13px;
   line-height: 1.4;
 }
 
@@ -104,7 +104,11 @@ span.line {
     gap: 3rem;
   }
 
-  .Projects h1:before {
-    font-size: 3.2rem;
+  .Projects .titleBox h1:before {
+    content: unset;
+  }
+
+  .Projects .titleBox span.line {
+    width: 28%;
   }
 }

@@ -54,10 +54,10 @@ button {
   }
 
   .about .titleBox h1:before {
-    font-size: 5rem;
+    content: unset;
   }
 
-  /* .w-1\/2 {
-    width: 100%;
-  } */
+  .about .titleBox span.line {
+    width: 28%;
+  }
 }
