@@ -13,7 +13,6 @@ import Transition from "../../components/transition/Transition";
 import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
-
   const [state, handleSubmit] = useForm("xeqydzqp");
   if (state.succeeded) {
     return <p>Thanks for joining!</p>;
@@ -103,21 +102,26 @@ const Contact = () => {
                 placeholder="Email"
                 className="text-base outline-none rounded-md"
               />
-              <ValidationError 
-        prefix="Email" 
-        field="email"
-        errors={state.errors}
-      />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
+              />
             </div>
             <div className="text-area my-4">
               <textarea
-               id="message"
-               name="message"
+                id="message"
+                name="message"
                 className="w-full outline-none rounded-md"
                 placeholder="Tell us more about your needs........"
               ></textarea>
             </div>
-            <ButtonComp type="submit" disabled={state.submitting} text="Send Message" onClick={() => {}} />
+            <ButtonComp
+              // type="submit"
+              // disabled={state.submitting}
+              text="Send Message"
+              onClick={() => {}}
+            />
           </form>
         </div>
       </div>
