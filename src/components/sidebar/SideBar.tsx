@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import { RiHome4Line } from "react-icons/ri";
-import { IoPerson } from "react-icons/io5";
+import { IoPerson, IoClose } from "react-icons/io5";
 import { IoIosChatboxes } from "react-icons/io";
 import { FiChevronsLeft, FiMenu } from "react-icons/fi";
 import { MdOutlineWorkspacePremium } from "react-icons/md";
@@ -28,7 +28,7 @@ function Sidebars() {
   return (
     <div>
       <button className="toggle-button" onClick={toggleSidebar}>
-        <FiMenu />
+        {isSidebarVisible ? <IoClose /> : <FiMenu />}
       </button>
       <div className={`sideBar ${isSidebarVisible ? "" : "hidden"}`}>
         <Sidebar className={`app `} style={{ height: "100%" }}>
@@ -41,7 +41,7 @@ function Sidebars() {
                     padding: "9px",
                     fontWeight: "bold",
                     letterSpacing: "1px",
-                  }}
+                  }}  onClick={() => handleClick("home")}
                 >
                   Ankit<span className="logoPart">.</span>
                 </div>

@@ -89,7 +89,7 @@ const Home = () => {
       <div className="info min-w-60">
         <img src={Avatar} alt="" className="m-auto mb-3" />
         <h1 className="font-bold text-6xl ">Ankit Mishra</h1>
-        <p className="mb-4 mt-2 text-xl">
+        <p className="mb-4 mt-2 text-2xl font-medium">
           {" "}
           I'm a <span ref={el} />
         </p>
