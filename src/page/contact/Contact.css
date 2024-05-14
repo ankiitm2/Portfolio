@@ -62,5 +62,13 @@
   }
 
   .contact .titleBox h1:before {
-    font-size: 3.8rem;}
+    font-size: 3.8rem;
+  }
+
+  .contact .titleBox h1:before {
+    content: unset;
+  }
+
+  .contact .titleBox span.line{
+  width: 28%;}
 }

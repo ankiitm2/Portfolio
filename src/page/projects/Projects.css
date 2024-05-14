@@ -29,8 +29,8 @@ span.line {
   width: 100%;
   height: 15.5rem;
   background-image: url(../../assets/Drama.webp);
-  background-size: 100% 100%;
-  object-fit: revert-layer;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -41,7 +41,7 @@ span.line {
   box-shadow: rgb(141 141 141 / 75%) 0px 2px 8px 0px;
 }
 
-.card1{
+.card1 {
   background-image: url(../../assets/360_F_257521199_oYHHL4owRzuWSz6TeEUQxxr7HBM9b8JG.jpg);
 }
 

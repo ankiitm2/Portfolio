@@ -44,12 +44,12 @@ const Contact = () => {
 
   return (
     <Transition>
-      <div className="contact min-h-screen gap-8 lg:gap-28 md:gap-28 p-14 flex flex-col justify-around relative">
+      <div className="contact min-h-screen gap-8 lg:gap-20 md:gap-20 p-14 flex flex-col justify-around relative">
         <div className="titleBox text-center mt-3">
           <h1 className="text-4xl font-bold position-relative">Get in Touch</h1>
           <span className="line"></span>
         </div>
-        <div className="bottom-row flex flex-col gap-16 lg:flex-row md:flex-row">
+        <div className="bottom-row flex flex-col gap-16 lg:flex-row">
           <div className="contactBox">
             <h2 className="mb-4 text-2xl uppercase">Address</h2>
             <p className="text-xl mb-4">Sector 9B, Gurgaon, Haryana</p>

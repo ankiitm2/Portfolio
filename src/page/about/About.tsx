@@ -26,12 +26,12 @@ const About = () => {
 
   return (
     <Transition>
-      <div className="about min-h-screen gap-8 lg:gap-28 md:gap-28 p-14 flex flex-col justify-around relative">
-        <div className="titleBox text-center mt-3 mb-7">
+      <div className="about min-h-screen gap-8 lg:gap-20 md:gap-20 p-14 flex flex-col justify-around relative">
+        <div className="titleBox text-center mt-3">
           <h1 className="text-4xl font-bold position-relative">Know Me More</h1>
           <span className="line"></span>
         </div>
-        <div className="info flex flex-col lg:flex-row md:flex-row gap-4">
+        <div className="info flex flex-col lg:flex-row  gap-4">
           <div className="head">
             <h2 className="text-4xl mb-3 font-medium">
               I'm <span className="color">Ankit Mishra</span>, a Web Developer
