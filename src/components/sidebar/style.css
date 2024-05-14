@@ -9,6 +9,10 @@
   /* transform: translateX(-100%); */
 }
 
+ .active{
+  color: #06d688;
+}
+
 .sideBar.hidden {
   transform: translateX(-100%);
 }

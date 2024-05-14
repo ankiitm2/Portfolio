@@ -8,14 +8,17 @@ import { MdOutlineWorkspacePremium } from "react-icons/md";
 import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 
 function Sidebars() {
+  const [isSidebarVisible, setSidebarVisible] = React.useState(false); // Start hidden on small devices
+  const [activeSection, setActiveSection] = React.useState("home");
+
   const handleClick = (elementId) => {
     const element = document.getElementById(elementId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+      setActiveSection(elementId);
       setSidebarVisible(false);
     }
   };
-  const [isSidebarVisible, setSidebarVisible] = React.useState(false); // Start hidden on small devices
 
   const toggleSidebar = () => {
     // Toggle sidebar visibility based on screen width
@@ -41,34 +44,39 @@ function Sidebars() {
                     padding: "9px",
                     fontWeight: "bold",
                     letterSpacing: "1px",
-                  }}  onClick={() => handleClick("home")}
+                  }}
+                  onClick={() => handleClick("home")}
                 >
                   Ankit<span className="logoPart">.</span>
                 </div>
               </MenuItem>
             </Menu>
-            <Menu className="nav-links w-full justify-center items-center">
+            <Menu className="nav-links w-full text-xl justify-center items-center">
               <MenuItem
                 icon={<RiHome4Line />}
                 onClick={() => handleClick("home")}
+                className={activeSection === "home" ? "active" : ""}
               >
                 Home
               </MenuItem>
               <MenuItem
                 icon={<IoPerson />}
                 onClick={() => handleClick("about")}
+                className={activeSection === "about" ? "active" : ""}
               >
                 About
               </MenuItem>
               <MenuItem
                 icon={<MdOutlineWorkspacePremium />}
                 onClick={() => handleClick("projects")}
+                className={activeSection === "projects" ? "active" : ""}
               >
                 Projects
               </MenuItem>
               <MenuItem
                 icon={<IoIosChatboxes />}
                 onClick={() => handleClick("contact")}
+                className={activeSection === "contact" ? "active" : ""}
               >
                 Contact
               </MenuItem>
