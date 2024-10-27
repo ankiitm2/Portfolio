@@ -1,7 +1,7 @@
 import "./About.css";
 import ButtonComp from "../../components/button/Button";
 import { useEffect, useState } from "react";
-import ResumePDF from "../../assets/AnkitCV.pdf";
+import ResumePDF from "../../assets/Ankit_frontend.pdf";
 import Transition from "../../components/transition/Transition";
 
 // interface AboutProps {
@@ -49,24 +49,22 @@ const About = () => {
           <div className="subInfo md:w-1/2 lg:w-1/2">
             <ul className="mb-2 text-xl">
               <li>
-                <span className="font-semibold me-2">Name:</span>Ankit Mishra
+                Name:&nbsp;<span className="font-semibold">Ankit Mishra</span>
               </li>
               <li>
-                <span className="font-semibold me-2">Email:</span>
-                <a
+                Email:&nbsp;<a
                   href="mailto:ankitmishra07am@gmail.com"
-                  className="color"
+                  className="color font-semibold"
                   rel="noopener noreferrer"
                 >
                   ankitmishra07am@gmail.com
                 </a>
               </li>
               <li>
-                <span className="font-semibold me-2">Age:</span>
-                {age}
+                Age:&nbsp;<span className="font-semibold me-2">{age}</span>
               </li>
-              <li className="border-0">
-                <span className="font-semibold me-2">From:</span>Gurgaon, India
+              <li className="border-0 mb-5">
+                From:&nbsp;<span className="font-semibold">Gurgaon, India</span>
               </li>
             </ul>
             <ButtonComp text={"Resume"} onClick={openResume} />

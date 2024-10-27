@@ -4,10 +4,6 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-// import About from "./page/about/About";
-// import Home from "./page/home/Home";
-// import Projects from "./page/projects/Projects";
-// import Conatct from "./page/contact/Contact";
 import CursorComponent from "./components/cursor/CursorComponent";
 import Layout from "./page/layout/Layout";
 
