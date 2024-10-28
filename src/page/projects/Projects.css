@@ -41,8 +41,18 @@ span.line {
   box-shadow: rgb(141 141 141 / 75%) 0px 2px 8px 0px;
 }
 
-.card1 {
-  background-image: url(../../assets/360_F_257521199_oYHHL4owRzuWSz6TeEUQxxr7HBM9b8JG.jpg);
+
+.card:first-child::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../../assets/taskM.png);
+  background-size: 100% 100%;
+  z-index: 0;
+  opacity: .5;
 }
 
 .card2 {
@@ -58,32 +68,11 @@ span.line {
   box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
 
-.card__content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-  background-color: #030303c9;
-  transform: rotateX(-90deg);
-  transform-origin: bottom;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.card:hover .card__content {
-  transform: rotateX(0deg);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .card__title {
   margin: 0;
   font-size: 21px;
   font-weight: 700;
+  position: relative;
 }
 
 .card:hover svg {

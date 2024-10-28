@@ -4,6 +4,9 @@ import "./Projects.css";
 
 const Projects = () => {
 
+  const openProject1 = () => {
+    window.open("https://task-management-blond-phi.vercel.app/");
+  };
   const openProject = () => {
     window.open("https://ankiitm2.github.io/Drama/");
   };
@@ -20,6 +23,15 @@ const Projects = () => {
           <span className="line"></span>
         </div>
         <div className="cards flex flex-wrap gap-10 justify-center items-center lg:flex-row">
+          <div className="card max-w-md card1">
+            <div className="card__content">
+              <p className="card__title">Task Manager</p>
+              <p className="card__description mb-4">
+              Prioritize Your Work
+              </p>
+              <ButtonComp text={"Open"} onClick={openProject1} />
+            </div>
+          </div>
           <div className="card max-w-md card1">
             <div className="card__content">
               <p className="card__title">Drama: movies database application</p>

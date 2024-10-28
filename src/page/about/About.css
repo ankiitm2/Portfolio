@@ -44,6 +44,7 @@ button {
   height: 3.5em !important;
 }
 
+
 @media screen and (max-width: 768px) {
   .about {
     padding-top: 2rem !important;
