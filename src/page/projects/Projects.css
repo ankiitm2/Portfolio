@@ -41,8 +41,11 @@ span.line {
   box-shadow: rgb(141 141 141 / 75%) 0px 2px 8px 0px;
 }
 
+.card .card__content{
+  text-align: center;
+}
 
-.card:first-child::before {
+.card::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -50,13 +53,18 @@ span.line {
   top: 0;
   left: 0;
   background-image: url(../../assets/taskM.png);
-  background-size: 100% 100%;
+  background-size: cover;
   z-index: 0;
-  opacity: .5;
+  opacity: .3;
+  text-align: center;
 }
 
-.card2 {
-  background-image: url(../../assets/speech-recognition-in-ai-banner.jpg);
+.card0::before{
+  background-image: url(../../assets/taskM.png);
+}
+
+.card1::before {
+  background-image: url(../../assets/drama.png);
 }
 
 .card3 {
@@ -70,7 +78,7 @@ span.line {
 
 .card__title {
   margin: 0;
-  font-size: 21px;
+  font-size: 1.6125rem;
   font-weight: 700;
   position: relative;
 }
@@ -81,7 +89,7 @@ span.line {
 
 .card__description {
   margin: 4px 0 0;
-  font-size: 13px;
+  font-size: 1.0625rem;
   line-height: 1.4;
 }
 
