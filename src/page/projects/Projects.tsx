@@ -14,6 +14,10 @@ const Projects = () => {
   const openProject2 = () => {
     window.open("https://ankiitm2.github.io/SpeechToText/");
   };
+  
+  const openProject3 = () => {
+    window.open("https://ankiitm2.github.io/Ecommerce/");
+  };
 
   return (
     <Transition>
@@ -52,11 +56,11 @@ const Projects = () => {
           </div>
           <div className="card max-w-md card3">
             <div className="card__content">
-              <p className="card__title">Card Title</p>
+              <p className="card__title">Readify</p>
               <p className="card__description mb-4">
-                Speech recognition marvel translates spoken words into text
+                Shop you like
               </p>
-              <ButtonComp text={"Open"} onClick={openProject2} />
+              <ButtonComp text={"Open"} onClick={openProject3} />
             </div>
           </div>
         </div>
